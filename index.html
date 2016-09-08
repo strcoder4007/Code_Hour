@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <title>Code Hour</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+    <script src="scripts/app.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <!-- endbuild -->
+
+    <style type="text/css">
+        .newclass {
+            margin-bottom: 5px;
+            font-size: x-large;
+            width: 70%;
+            margin-left: 15%;
+            margin-top: 2%;
+            font-weight: lighter;
+            text-align: center;
+            background: #141224;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: x-large;
+            border-radius: 10px;
+            height: 40px;
+            vertical-align: middle;
+        }
+        .centering {
+            width: 20em;
+            border: 0;
+            display: block;
+            margin: 0;
+        }
+    </style>
+
+  </head>
+
+
+
+
+<body ng-app="codeHourApp">
+    <nav id="myNavbar" class="navbar-inverse" role="navigation">
+        <div class="container-fluid" style="background-color:#141224;height:128px">
+            <div class="navbar-header navbar-toggle">
+                <img class = "centering" src="code_hour_head.png"/>
+            </div>
+
+            <div class="collapse  navbar-collapse" style="float:left">
+                <div style="float:left">
+                    <a href="http://codehour.online">
+                        <img src="code_hour_logo.png" style="width:150px; height:150px" />
+                    </a>
+                </div>
+                <div style="float:left; margin-top:36px">
+                    <a href="http://codehour.online">
+                        <img src="code_hour_head.png" style="width:18em; height:70px" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="newclass" style="margin-top:50px"><span style="color:#FFFFFF; font-weight:normal; vertical-align: middle">Live Contests</span>
+    </div>
+
+    <div ng-view></div>
+
+
+    <div class="footer" style="background-color:#141224; margin: 15px 0 0 0">
+        <div style="text-align:center; padding: 10px 0 5px 0">
+            <span style="font-family:'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular',  'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight:normal; font-size:x-large;color:#08D671">
+                About
+            </span>
+        </div>
+        <div style="text-align:center">
+            <span style="font-family:'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular',  'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight:normal; font-size:small;color:#FFFFFF; padding:10px">
+                Code_Hour is an open-source web application which allows users to keep track of competitive programming contests across 5 websites. Code_Hour keeps users updated so they never miss a contest.
+            </span>
+        </div>
+        <div style="text-align:center; margin: 5px 0 5px 0">
+            <span style="font-family:'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular',  'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight:normal; font-size:x-large;color:#08D671">
+                Created By
+            </span>
+        </div>
+        <div style="text-align:center">
+            <span style="font-family:'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular',  'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight:normal; font-size:small; color:#FFFFFF; padding:10px">
+                Shubham Singh <a href = "http://codeforces.com/profile/strcoder4007" target = "blank">(__STR at CodeForces)</a></br>Ajit Dubey <a href= "http://codeforces.com/profile/Gamer1oh1" target = "blank">(One_touch_finish at CodeForces)</a>
+            </span>
+        </div>
+        <p style = "font-family:'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular',      'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight:normal; font-size:medium; color:#FFFFFF; text-align:center; margin:20px 0 0 0">
+            Created with
+        <span class="glyphicon glyphicon-heart" style="color:#FB0102"></span>
+             and Javascript
+        </p>
+    </div>
+
+</body>
+
+</html>
